@@ -1,10 +1,49 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/assets/favicon-16x16.png?v=2.1.2" type="image/png" sizes="16x16"><link rel="icon" href="/assets/favicon-32x32.png?v=2.1.2" type="image/png" sizes="32x32"><meta property="og:type" content="website">
-<meta property="og:title" content="zgh&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/assets/favicon-16x16.png?v=2.1.2" type="image/png" sizes="16x16"><link rel="icon" href="/assets/favicon-32x32.png?v=2.1.2" type="image/png" sizes="32x32"><meta name="description" content="—GitHub图床是个不错的选择，利用jsDelivr CDN加速访问（jsDelivr 是一个免费开源的 CDN 解决方案），PicGo工具一键上传，操作简单高效，GitHub和jsDelivr都是大厂，不用担心跑路问题，不用担心速度和容量问题，而且完全免费，可以说是目前免费图床的最佳解决方案！但是GitHub是一个外国软件，在上传图片时经常会出现失败的现象,所以通过申请一个免费的主机（国外）可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用GitHub+免费主机+PicGo搭建一个免费的图床">
+<meta property="og:url" content="http://example.com/2020/10/26/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/index.html">
 <meta property="og:site_name" content="zgh&#39;s Blog">
+<meta property="og:description" content="—GitHub图床是个不错的选择，利用jsDelivr CDN加速访问（jsDelivr 是一个免费开源的 CDN 解决方案），PicGo工具一键上传，操作简单高效，GitHub和jsDelivr都是大厂，不用担心跑路问题，不用担心速度和容量问题，而且完全免费，可以说是目前免费图床的最佳解决方案！但是GitHub是一个外国软件，在上传图片时经常会出现失败的现象,所以通过申请一个免费的主机（国外）可">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/8c908a39ff09c7c875d65c4a47f2a73b.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/71444736bb2936fe4e044aef94582e04.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/00d8e6710e3badd4f7de32954446dc28.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/1c5dd34be5c62eec15d2306a496a32fa.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/8b9601a4cafad28127b0a361489c0db2.png">
+<meta property="og:image" content="c:%5CUsers%5C%E5%B4%94%E9%87%91%E8%8B%B1%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201026185516492.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/f81e8731749b45e9dc6aa4f8c0f633f2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/b3b1f6e355922c8f2e07473f9581de32.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/b24d819eccbf18037d5bcbfcfe4b8557.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/78a1a1b26bd4ac16bb9cbc4663d6128f.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/4bd641fe1c2cfd0070a892bc8fa6a271.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/c0aa7d8074f53e8ee7bd8b538feb173e.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/707f018fa1c8396c795e18c40e81c5ff.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/8b171b517b1bec98580676917c10c352.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/86c8b9347c5e21766f1239d7d6f4d38d.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/1921e2ab528cee2a147160203885d21d.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/6e0ab430a8e24ec7dfba77519ed6d442.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/51235f6ecd727338345421574af7e28f.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/787cac591d0f4885de86b7d63e656293.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/4667fddfb16a524317285fade99b770a.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/71120d566dde9a17658d7750f106ee9f.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/b6d0b81458a2da947c1b7a1be7d146f2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/2ad730b2a9b119663c555951a61b492a.png">
+<meta property="og:image" content="c:%5CUsers%5C%E5%B4%94%E9%87%91%E8%8B%B1%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201026194849671.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/03a9522c8dede0f40d7158faf10090e6.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/dd266fab974a9ac4a00a202d9f7ebf06.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/e1c9ce939f80b5c0c261337e77af24ac.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/c94e342dcf7e1fd533bcc91d8918b985.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/50ca1748d6bd586458ce4ff52ee4cf11.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/b844d8dfea2ad992269700ecafeb40e2.png">
+<meta property="article:published_time" content="2020-10-26T09:49:06.000Z">
+<meta property="article:modified_time" content="2020-10-26T12:13:06.521Z">
 <meta property="article:author" content="zghya">
-<meta name="twitter:card" content="summary"><title>zgh's Blog</title><link ref="canonical" href="http://example.com/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.1.2"><script>var Stun = window.Stun || {};
+<meta property="article:tag" content="图床">
+<meta property="article:tag" content="GitHub">
+<meta property="article:tag" content="免费主机">
+<meta property="article:tag" content="PicGo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/8c908a39ff09c7c875d65c4a47f2a73b.png"><title>利用GitHub+免费主机+PicGo搭建一个免费的图床 | zgh's Blog</title><link ref="canonical" href="http://example.com/2020/10/26/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.1.2"><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
   algolia: undefined,
@@ -27,7 +66,7 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="javascript:;" onclick="return false;"><span class="header-nav-menu-item__icon"><i class="fa fa-ellipsis-h"></i></span><span class="header-nav-menu-item__text">其他</span></a><div class="header-nav-submenu"><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/friends/"><span class="header-nav-submenu-item__icon"><i class="fas fa-users"></i></span><span class="header-nav-submenu-item__text">友链</span></a></div><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/photo/"><span class="header-nav-submenu-item__icon"><i class="fa fa-photo"></i></span><span class="header-nav-submenu-item__text">相册</span></a></div></div></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">zgh's Blog</div><div class="header-banner-info__subtitle">有时候努力比努力更重要</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/10/26/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/">利用GitHub+免费主机+PicGo搭建一个免费的图床</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-10-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-10-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">735</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>—GitHub图床是个不错的选择，利用jsDelivr CDN加速访问（jsDelivr 是一个免费开源的 CDN 解决方案），PicGo工具一键上传，操作简单高效，GitHub和jsDelivr都是大厂，不用担心跑路问题，不用担心速度和容量问题，而且完全免费，可以说是目前免费图床的最佳解决方案！<strong>但是GitHub是一个外国软件，在上传图片时经常会出现失败的现象,所以通过申请一个免费的主机（国外）可以有效的解决这个问题。</strong></p>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="javascript:;" onclick="return false;"><span class="header-nav-menu-item__icon"><i class="fa fa-ellipsis-h"></i></span><span class="header-nav-menu-item__text">其他</span></a><div class="header-nav-submenu"><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/friends/"><span class="header-nav-submenu-item__icon"><i class="fas fa-users"></i></span><span class="header-nav-submenu-item__text">友链</span></a></div><div class="header-nav-submenu-item"><a class="header-nav-submenu-item__link" href="/photo/"><span class="header-nav-submenu-item__icon"><i class="fa fa-photo"></i></span><span class="header-nav-submenu-item__text">相册</span></a></div></div></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">zgh's Blog</div><div class="header-banner-info__subtitle">有时候努力比努力更重要</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">利用GitHub+免费主机+PicGo搭建一个免费的图床</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-10-26</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-10-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">735</span></span><span class="post-meta-item post-meta-item--visitors"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body"><p>—GitHub图床是个不错的选择，利用jsDelivr CDN加速访问（jsDelivr 是一个免费开源的 CDN 解决方案），PicGo工具一键上传，操作简单高效，GitHub和jsDelivr都是大厂，不用担心跑路问题，不用担心速度和容量问题，而且完全免费，可以说是目前免费图床的最佳解决方案！<strong>但是GitHub是一个外国软件，在上传图片时经常会出现失败的现象,所以通过申请一个免费的主机（国外）可以有效的解决这个问题。</strong></p>
 
         <h3 id="1-新建github仓库"   >
           <a href="#1-新建github仓库" class="heading-link"><i class="fas fa-link"></i></a>1、新建GitHub仓库</h3>
@@ -198,130 +237,12 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></he
           src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/zghya/PicGotuchuang@main/2020/10/26/b844d8dfea2ad992269700ecafeb40e2.png"  alt="img" />
       </p>
 <p>友情提示：记得将其设为默认浏览器</p>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/10/22/%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E6%97%A0%E6%A1%86%E6%9E%B6/">如何用GitHub构建一个简单的网页</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-10-22</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-10-26</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">404</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <h3 id="不用框架版本"   >
-          <a href="#不用框架版本" class="heading-link"><i class="fas fa-link"></i></a>（不用框架版本）</h3>
-      
-
-        <h3 id="1-申请github账号"   >
-          <a href="#1-申请github账号" class="heading-link"><i class="fas fa-link"></i></a>1、申请GitHub账号</h3>
-      
-<p>进入GitHub官网，点击右上角的Sign up进行注册，</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/e216f5d9ad9cf9a52577541066682e93.png"  alt="img" />
-      </p>
-<p>注册很简单，只要填写好用户名，邮箱，密码就行（已注册的用户名，邮箱不能再进行注册）</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/50531237bd8b3aa778adffe7396dcd70.png"  alt="img" />
-      </p>
-<p>下面有一个你是人类的验证（照着做就行），然后点下面的Create account创建账户。</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/8e1a2e40fba75ca424b9a5cd62be387f.png"  alt="img" />
-      </p>
-<p>点进来之后有个有个调查问卷（想做就做不想做直接往下滑，点Complete setup进行下一步 ）。</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/302634ca92e64723a491f8d99749fb40.png"  alt="img" />
-      </p>
-<p>随后GitHub会给你注册的邮箱发一份确认连接，点verify email address就行。</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/2ca65669a96d4191b3f55adb3b9289cc.png"  alt="img" />
-      </p>
-<p>然后到这就完成了。</p>
-
-        <h3 id="2-创建仓库"   >
-          <a href="#2-创建仓库" class="heading-link"><i class="fas fa-link"></i></a>2、创建仓库</h3>
-      
-<p>（1）、点击右上角的圆圈，找到Your repositories点进去（这里还没创建肯定是啥都没有的）。</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/78f0f866bc7adaa2ae6286ea1d5d3bd4.png"  alt="img" />
-      </p>
-<p>（2）、点击new按钮创建一个新仓库</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/e6228e05ad29ff259a7f0aab122f6f28.png"  alt="img" />
-      </p>
-<p>（3）、这里随便自己起个名字，但是名字后缀必须要按照统一格式，&lt;你的名字&gt;.github.io（<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://xn--zhgyaya-ff6kt45e.github.io" >例如zhgyaya.github.io</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>）</p>
-<p>然后把用户名填上，其余选项都默认就可以了。点击下面的create repository进行创建就可以了。</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/6508ccb3eed155fce59fe2b0b5a0d1fa.png"  alt="img" />
-      </p>
-<p>（4）、点击下面的蓝色字体creating a new file，创建一个新文件就行了。</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/0953d9200fb216d1236ffaeb0d06d71f.png"  alt="img" />
-      </p>
-<p>（5）、新文件名必须按照他规定的来（index.html）</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/513ae3118c1cfbf92e14e1bed14e65db.png"  alt="img" />
-      </p>
-<p>（6）、下面自己用html随便写一写，</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/d048ee8900157d58dbd3555f9f4ccb8b.png"  alt="img" />
-      </p>
-<p>下面点击Commit new file进行创建</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/3c236d9b840e20f021eef5815d8f71b6.png"  alt="img" />
-      </p>
-
-        <h3 id="3-查看网站网址其实直接用https你的用户名githubio也行"   >
-          <a href="#3-查看网站网址其实直接用https你的用户名githubio也行" class="heading-link"><i class="fas fa-link"></i></a>3、查看网站网址（其实直接用https://你的用户名.github.io/也行）</h3>
-      
-<p>（1）、点击settings</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/a67f5becf0539475bbc3ede767573b65.png"  alt="img" />
-      </p>
-<p>（2）、往下滑找到GitHub pages，里面的网址就是了（<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://zghyaya.guithub.io" >https://zghyaya.guithub.io</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>）.</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/c7916ecccef6941bf76e2351a237ea32.png"  alt="img" />
-      </p>
-<p>（3）、打开网站看一下效果</p>
-<p>
-        <img   class="lazyload lazyload-gif"
-          src="/images/loading.svg" data-src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/22/f2dcf18e57eed0a9b98791486cab2287.png"  alt="img" />
-      </p>
-<p>这样就完成了。</p>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/09/28/hello-world/">Hello World</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-09-28</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-10-08</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">80</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>Welcome to <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>! This is your very first post. Check <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> or you can ask me on <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>.</p>
-
-        <h2 id="quick-start"   >
-          <a href="#quick-start" class="heading-link"><i class="fas fa-link"></i></a>Quick Start</h2>
-      
-
-        <h3 id="create-a-new-post"   >
-          <a href="#create-a-new-post" class="heading-link"><i class="fas fa-link"></i></a>Create a new post</h3>
-      
-<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="run-server"   >
-          <a href="#run-server" class="heading-link"><i class="fas fa-link"></i></a>Run server</h3>
-      
-<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="generate-static-files"   >
-          <a href="#generate-static-files" class="heading-link"><i class="fas fa-link"></i></a>Generate static files</h3>
-      
-<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="deploy-to-remote-sites"   >
-          <a href="#deploy-to-remote-sites" class="heading-link"><i class="fas fa-link"></i></a>Deploy to remote sites</h3>
-      
-<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></div></figure>
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/09/30/81620c7f040b8ebc47372dfa909a2663.png" alt="avatar"></div><p class="sidebar-ov-author__text">い醉梦ジ红尘</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/zghya" target="_blank" rel="noopener" data-popover="social.GitHub" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="mailto:2802055462@qq.com" target="_blank" rel="noopener" data-popover="social.E-Mail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fas fa-comment"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ba-ba-17-65-95" target="_blank" rel="noopener" data-popover="social.知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-zhihu"></i></span></a><a class="sidebar-ov-social-item" href="https://blog.csdn.net/zghya" target="_blank" rel="noopener" data-popover="social.CSDN" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-codiepie"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>zghya</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.1.2</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="100,100,255" opacity="0.6" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script>function initSearch() {
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://example.com">zghya</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://example.com/2020/10/26/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/">http://example.com/2020/10/26/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://example.com/tags/%E5%9B%BE%E5%BA%8A/">图床</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://example.com/tags/GitHub/">GitHub</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://example.com/tags/%E5%85%8D%E8%B4%B9%E4%B8%BB%E6%9C%BA/">免费主机</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://example.com/tags/PicGo/">PicGo</a></span></div><div class="post-reward reward"><div class="reward-button">请我喝杯咖啡~</div><div class="reward-qrcode"><span class="reward-qrcode-alipay"><img class="reward-qrcode-alipay__img" src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/06/93bb85e76b9061841211873df9bb3a32.png"><div class="reward-qrcode-alipay__text">支付宝打赏</div></span><span class="reward-qrcode-wechat"><img class="reward-qrcode-wechat__img" src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/10/06/04b6acbca10e112b0f9e23ccec43d4c3.png"><div class="reward-qrcode-wechat__text">微信打赏</div></span></div></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2020/10/22/%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E6%97%A0%E6%A1%86%E6%9E%B6/"><span class="paginator-prev__text">如何用GitHub构建一个简单的网页</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="valine-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%BB%BAgithub%E4%BB%93%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">
+          1、新建GitHub仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BAtoken%E5%B9%B6%E4%BF%9D%E5%AD%98token%E5%8F%AA%E7%94%9F%E6%88%90%E4%B8%80%E6%AC%A1%E5%88%87%E8%AE%B0%E5%A5%BD%E5%A5%BD%E4%BF%9D%E5%AD%98"><span class="toc-number">2.</span> <span class="toc-text">
+          2、创建token并保存（token只生成一次，切记好好保存）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA%E5%85%8D%E8%B4%B9%E7%9A%84%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA"><span class="toc-number">3.</span> <span class="toc-text">
+          3、注册一个免费的虚拟主机</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E5%87%A0%E7%A7%8D%E9%94%99%E8%AF%AF%E6%83%85%E5%86%B5%E5%8F%8A%E4%BF%AE%E6%94%B9"><span class="toc-number">3.1.</span> <span class="toc-text">
+          注：（几种错误情况及修改）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%B8%8B%E8%BD%BDpicgo"><span class="toc-number">4.</span> <span class="toc-text">
+          4、下载PicGo</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/09/30/81620c7f040b8ebc47372dfa909a2663.png" alt="avatar"></div><p class="sidebar-ov-author__text">い醉梦ジ红尘</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/zghya" target="_blank" rel="noopener" data-popover="social.GitHub" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="mailto:2802055462@qq.com" target="_blank" rel="noopener" data-popover="social.E-Mail" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fas fa-comment"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ba-ba-17-65-95" target="_blank" rel="noopener" data-popover="social.知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-zhihu"></i></span></a><a class="sidebar-ov-social-item" href="https://blog.csdn.net/zghya" target="_blank" rel="noopener" data-popover="social.CSDN" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-codiepie"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">7</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-cn" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>zghya</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.1.2</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="100,100,255" opacity="0.6" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';
 
@@ -631,7 +552,7 @@ window.addEventListener('DOMContentLoaded', function () {
   quicklink({
     timeout: '10000',
     priority: true,
-    ignores: [uri => uri.includes('#'), uri => uri === 'http://example.com/', /\/api\/?/,uri => uri.includes('.xml'),uri => uri.includes('.zip'),(uri, el) => el.hasAttribute('nofollow'),(uri, el) => el.hasAttribute('noprefetch')]
+    ignores: [uri => uri.includes('#'), uri => uri === 'http://example.com/2020/10/26/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/', /\/api\/?/,uri => uri.includes('.xml'),uri => uri.includes('.zip'),(uri, el) => el.hasAttribute('nofollow'),(uri, el) => el.hasAttribute('noprefetch')]
   });
 }
 
